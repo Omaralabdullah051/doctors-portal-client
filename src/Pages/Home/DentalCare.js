@@ -4,7 +4,7 @@ import PrimaryButton from '../Shared/PrimaryButton';
 
 const DentalCare = () => {
     return (
-        <div className="hero min-h-screen bg-base-200 text-left mb-20 lg:mb-52">
+        <div className="hero min-h-screen bg-base-200  mb-20 lg:mb-52">
             <div className="hero-content flex-col lg:flex-row md:px-28">
                 <img src={treatment} className="max-w-sm rounded-lg shadow-2xl" alt='' />
                 <div className='md:pl-20'>

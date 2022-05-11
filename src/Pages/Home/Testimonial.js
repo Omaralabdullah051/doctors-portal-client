@@ -8,7 +8,7 @@ import people3 from '../../assets/images/people3.png';
 const Testimonial = () => {
     return (
         <div>
-            <div className='text-left flex justify-between items-center'>
+            <div className=' flex justify-between items-center'>
                 <div>
                     <h6 className='text-primary'>Testimonial</h6>
                     <h5>What our patients Says</h5>
