@@ -20,6 +20,9 @@
         "terminal.foreground": "#00c8ff"
     },
     "peacock.color": "#61dafb",
-    "workbench.colorTheme": "Dracula",
-    "terminal.integrated.localEchoStyle": "dim"
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "terminal.integrated.localEchoStyle": "dim",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": false,
+    "editor.fontFamily": "Consolas, 'Courier New', monospace"
 }

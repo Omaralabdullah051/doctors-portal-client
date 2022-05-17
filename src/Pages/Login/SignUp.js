@@ -4,20 +4,22 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from 'react-router-dom';
 
 import auth from '../../firebase.init';
+import useToken from '../../hooks/useToken';
 import Loading from '../Shared/Loading';
 
 const SignUp = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
     const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+    const [token] = useToken(user || googleUser);
     const [updateProfile] = useUpdateProfile(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (googleUser || user) {
+        if (token) {
             navigate('/appointment');
         }
-    }, [googleUser, user, navigate]);
+    }, [token, navigate]);
 
     let signInError;
 

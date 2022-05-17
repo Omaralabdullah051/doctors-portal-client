@@ -23,7 +23,7 @@ const BookingModal = ({ treatment, date, setTreatment,refetch }) => {
             phone: e.target.phone.value,
         };
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://intense-wildwood-88392.herokuapp.com/booking', {
             method: "POST",
             headers: {
                 'Content-type': 'application/json'
